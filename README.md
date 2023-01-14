@@ -1,2 +1,2 @@
 # portfolio-nextjs
-My portfolio with Nextjs Nodejs and MongoDB
+My portfolio with React Nodejs and MongoDB
