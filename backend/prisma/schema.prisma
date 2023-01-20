@@ -10,6 +10,14 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+model About {
+  id          String @id @default(auto()) @map("_id") @db.ObjectId
+  title       String
+  description String
+  cv          String
+  slug        String @unique
+}
+
 model Post {
   id       String @id @default(auto()) @map("_id") @db.ObjectId
   slug     String @unique
