@@ -1,9 +1,10 @@
 import Head from "next/head"
 import { ReactNode } from "react";
+import Header from "../ui/Header";
 import Navbar from "../ui/Navbar";
 
 type Props = {
-  children: ReactNode,
+  children?: ReactNode
   name: string
   phone: string
   email: string
@@ -22,10 +23,11 @@ const Layout = ({ children, name, phone, email, description, tags }: Props) => {
       </Head>
 
       <Navbar />
+      <Header />
+
       <main style={{
         padding: '0px 20px'
       }}>
-        {children}
       </main>
     </>
   )

@@ -19,13 +19,7 @@ const Navbar = () => {
       padding: '10px 20px',
       backgroundColor: theme?.colors.gray100.value
     }}>
-      <Text style={{ marginBottom: '0px' }} color="white" h4>{character}</Text>
-
-      <Spacer css={{ flex: '1' }} />
-
-      <Link className={styles.link} href="#">Skills</Link>
-      <Link className={styles.link} href="#">Experiences</Link>
-      <Link className={styles.link} href="#">Contact</Link>
+      <Text style={{ marginBottom: '0px' }} color="white" h2>{character}</Text>
 
       <Spacer css={{ flex: '1' }} />
 
@@ -37,9 +31,9 @@ const Navbar = () => {
       </Link>
 
       <Link href={sponsor}>
-        <Button auto color="secondary" rounded flat>
-          <HeartStraight className={styles.heart} size={20} weight="fill" color="#F31260" />
-          Sponsor
+        <Button auto flat size="lg">
+          <HeartStraight className={styles.heart} size={28} weight="fill" color="#F31260" />
+          <Text h2>Sponsor</Text>
         </Button>
       </Link>
     </div>

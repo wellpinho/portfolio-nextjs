@@ -9,5 +9,6 @@ export const contact = {
 export const links = {
   linkedin: "https://www.linkedin.com/in/wellpinho/",
   github: 'https://github.com/wellpinho',
-  sponsor: 'https://patreon.com/user?u=302418'
+  sponsor: 'https://patreon.com/user?u=302418',
+  cv: 'https://docs.google.com/document/d/1WpanENrFqR18fD523jP0882ZiVv0LoClSLV7QeyGirk/edit'
 }
