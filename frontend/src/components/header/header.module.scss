@@ -1,0 +1,220 @@
+.header {
+  position: relative;
+  height: 95vh;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(#7ED56F, .8), 
+    rgba(#28B485, .8)) , 
+  url("/assets/banner.jpg");
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+  .logo_box {
+    display: flex;
+    justify-content: space-between;
+
+    h2 {
+      font-size: 2.5rem;
+      color: #fff;
+    }
+
+    .heart {
+      margin-right: .3rem;
+      color: #F31260;
+      &:hover {
+        animation-duration: .2s;
+      }
+      animation-name: scaleImage;
+      animation-iteration-count: infinite;
+      animation-duration: .5s;
+      -webkit-transition: all 0.9s ease;
+      -moz-transition: all 0.9s ease;
+      -o-transition: all 0.9s ease;
+      transition: all 0.9s ease;
+      animation-direction: alternate;
+    }
+    
+    a {
+      font-size: x-large;
+      text-decoration: none;
+      color: #fff;
+    }
+    
+    @keyframes scaleImage {
+      0%{
+        transform: scale(1.3);
+      }
+      100%{
+        transform: scale(1);
+      }
+    }
+  }
+
+  .text_box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    .heading_primary {
+      color: #fff;
+      text-transform: uppercase;
+      backface-visibility: hidden;
+      margin-bottom: 6rem;
+    
+      .heading_main {
+        display: block;
+        font-size: 5.5rem;
+        font-weight: 400;
+        letter-spacing: 1rem;
+      
+        animation: moveLeftToCenter;
+        animation-duration: 5s;
+      
+        /*
+        animation-delay: 3s;
+        animation-iteration-count: 3;
+        */
+      }
+      
+      .heading_sub {
+        display: block;
+        font-size: 2.5rem;
+        font-weight: 700;
+        letter-spacing:  2rem;
+      
+        animation: moveRightToCenter;
+        animation-duration: 5s;
+      }
+    }
+  }
+}
+
+@keyframes moveLeftToCenter {
+  0% {
+    opacity: 0;
+    transform: translateX(-500px);
+  }
+
+  50% {
+    opacity: 50%;
+    transform: translateX(75px);
+  }
+
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes moveRightToCenter {
+  0% {
+    opacity: 0;
+    transform: translateX(500px);
+  }
+
+  50% {
+    opacity: 50%;
+    transform: translateX(-75px);
+  }
+
+  100% {
+    transform: translate(0);
+  }
+}
+
+.btn {  
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all .2s;
+    position: relative;
+    font-size: 1.6rem;
+  }
+
+  &:hover {
+    transform: translateY(-.3rem);
+    box-shadow: 0 1rem 2rem rgba(0,0,0, .2);
+
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0, .2);
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+  }
+}
+
+.btn_animated {
+  animation: moveInBottom .5s ease-out .75s;
+  animation-fill-mode: backwards;
+}
+
+.btn_text {
+  &:link,
+  &:visited {
+    font-size: 1.6rem;
+    color: --darkGreen;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: .1rem solid --darkGreen;
+    padding: .3rem;
+    transition: all .5s;
+    padding: .3rem .5rem;
+  }
+
+  &:hover {
+    background-color: --darkGreen;
+    color: --lightGreen;
+    box-shadow: 0 1rem 2rem rgba(0,0,0, .15);
+    transform: translateY(-.2rem);
+
+  }
+
+  &:active {
+    box-shadow: 0 1rem 1rem rgba(0,0,0, .15);
+    transform: translateY(0);
+  }
+}
+
+.btn_white {
+  background-color: #fff;
+  color: #777;
+
+  &:after {
+    background-color: #fff;
+  }
+}
+
+@keyframes moveInBottom{
+  0%{
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}

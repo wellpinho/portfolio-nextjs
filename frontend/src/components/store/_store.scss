@@ -1,0 +1,63 @@
+.section-store {
+  padding: 5rem 0;
+  background-color: $lightGrey;
+
+  .story {
+    width: 75%;
+    margin: 0 auto;
+    padding: 6rem;
+    padding-left: 9rem;
+    box-shadow: 0 3rem 6rem rgba($black, .1);
+    border-radius: .3rem;
+    font-size: $font-size16;
+    transform: skewX(-12deg);
+
+    &_shape {
+      width: 15rem;
+      height: 15rem;
+      background-color: orangered;
+      float: left;
+      // faz o texto se adaptar a imagem
+      shape-outside: circle(50% at 50% 50%);
+      clip-path: circle(50% at 50% 50%);
+      transform: translateX(-3rem) skewX(12deg);
+      position: relative;
+      cursor: pointer;
+
+      img {
+        height: 100%;
+        backface-visibility: hidden;
+        transform: translateX(-4rem) scale(1.4);
+        transition: all .5s;
+      }
+
+      img:hover {
+        transform: translateX(-4rem) scale(1);
+        filter: blur(3px) brightness(80%);
+      }
+
+      p {
+        transform: skewX(12deg);
+      }
+
+      &_caption {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 20%);
+        color: $white;
+        text-transform: uppercase;
+        font-size: 1.7rem;
+        text-align: center;
+        opacity: 0;
+        transition: all .5s;
+        backface-visibility: hidden;
+      }
+    }
+
+    &:hover .story_shape_caption {
+      opacity: 1;
+      transform: translate(-50%, -50%);
+    }
+  }
+}

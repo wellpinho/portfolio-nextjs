@@ -1,0 +1,154 @@
+.card {
+  position: relative;
+  perspective: 150rem;
+  height: 52rem;
+  cursor: pointer;
+
+  &_side {
+    height: 52rem;
+    transition: all .8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: .3rem;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba(0,0,0, .15);
+
+    &--front {
+      background-color: --white;
+    }
+
+    &--back {
+      transform: rotateY(180deg);
+
+      &-1 {
+        background-image: linear-gradient(to right bottom, --yellow-light, --yellow-dark);
+      }
+
+      &-2 {
+        background-image: linear-gradient(to right bottom, --lightGreen, --darkGreen);
+      }
+
+      &-3 {
+        background-image: linear-gradient(to right bottom, --blue-light, --blue-dark);
+      }
+    }
+  }
+
+  &:hover &_side--front {
+    transform: rotateY(-180deg);
+  }
+
+  &:hover &_side--back {
+    transform: rotateY(0);
+  }
+
+  //front side style
+  &_picture {
+    background-size: cover;
+    height: 23rem;
+
+    //deixa imagem mesclado com cor de fundo
+    background-blend-mode: screen;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    border-top-left-radius: .3rem;
+    border-top-right-radius: .3rem;
+
+    &-1 {
+      // TODO: usar este tipo quando for inserir imagem no bg do card
+      // background-image: linear-gradient(to right bottom, --yellow-light, --yellow-dark), url('');
+      background: linear-gradient(to right bottom, --yellow-light, --yellow-dark);
+    }
+
+    &-2 {
+      background: linear-gradient(to right bottom, --lightGreen, --darkGreen);
+    }
+
+    &-3 {
+      background: linear-gradient(to right bottom, --blue-light, --blue-dark);
+    }
+  }
+
+  &_heading {
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: --white;
+    text-align: right;
+    position: absolute;
+    top: 12rem;
+    right: 2rem;
+    width: 75%;
+
+    &-span {
+      padding: 1rem 1.5rem;
+      box-decoration-break: clone;
+
+      &-1 {
+        background-image: linear-gradient(to right bottom,
+            rgba(#ffb900, .85),
+            rgba(#ff7730, .85));
+      }
+
+      &-2 {
+        background-image: linear-gradient(to right bottom,
+            rgba(#7ED56F, .85),
+            rgba(#28B485, .85));
+      }
+
+      &-3 {
+        background-image: linear-gradient(to right bottom,
+            rgba(#2998ff, .85),
+            rgba(#5643fa, .85));
+      }
+    }
+  }
+
+  &_details {
+    padding: 3rem;
+
+    ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    li {
+      text-align: center;
+      font-size: 1.5rem;
+      padding: 1rem;
+
+      &:not(:last-child) {
+        border-bottom: .1rem solid --greyUltraLight;
+      }
+    }
+  }
+
+  //back side style
+  &_cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+  }
+
+  &_price-box {
+    text-align: center;
+    color: --white;
+    margin-bottom: 8rem;
+  }
+
+  &_price-only {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+  }
+
+  &_price-value {
+    font-size: 6rem;
+    font-weight: 100;
+  }
+}
