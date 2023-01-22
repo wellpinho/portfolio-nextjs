@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+:root {
+  --lightGreen: #7ED56F;
+  --mediumGreen: #55C57A;
+  --darkGreen: #28B485;
+  --lightYellow: #ffb900;
+  --darkYellow: #ff7730;
+  --blueLight: #2998ff;
+  --blueDark: #5643fa;
+  --black: #000000;
+  --lightGrey: #F7F7F7;
+  --greyUltraLight: #eeeeee;
+  --grey: #777;
+  --white: #FFFFFF;
+
+  --gridWidth: 114rem;
+  --gutterVertical: 8rem;
+  --gutterHorizontal: 4rem;
+  --fontSize16: 1.6rem;
+}
+
+@import "./scss/abstracts/functions";
+@import "./scss/abstracts/mixins";
+
+@import "./scss/base/base";
+@import "./scss/base/animations";
+@import "./scss/base/typography";
+@import "./scss/base/ultilities";
+@import "./scss/base/buttons";
+
+@import "./scss/base/grid";
+@import "./scss/base/card";

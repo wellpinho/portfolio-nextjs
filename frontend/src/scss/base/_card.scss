@@ -14,25 +14,25 @@
     backface-visibility: hidden;
     border-radius: .3rem;
     overflow: hidden;
-    box-shadow: 0 1.5rem 4rem rgba($black, .15);
+    box-shadow: 0 1.5rem 4rem rgba(0,0,0, .15);
 
     &--front {
-      background-color: $white;
+      background-color: --white;
     }
 
     &--back {
       transform: rotateY(180deg);
 
       &-1 {
-        background-image: linear-gradient(to right bottom, $yellow-light, $yellow-dark);
+        background-image: linear-gradient(to right bottom, --yellow-light, --yellow-dark);
       }
 
       &-2 {
-        background-image: linear-gradient(to right bottom, $lightGreen, $darkGreen);
+        background-image: linear-gradient(to right bottom, --lightGreen, --darkGreen);
       }
 
       &-3 {
-        background-image: linear-gradient(to right bottom, $blue-light, $blue-dark);
+        background-image: linear-gradient(to right bottom, --blue-light, --blue-dark);
       }
     }
   }
@@ -57,15 +57,17 @@
     border-top-right-radius: .3rem;
 
     &-1 {
-      background-image: linear-gradient(to right bottom, $yellow-light, $yellow-dark), url('');
+      // TODO: usar este tipo quando for inserir imagem no bg do card
+      // background-image: linear-gradient(to right bottom, --yellow-light, --yellow-dark), url('');
+      background: linear-gradient(to right bottom, --yellow-light, --yellow-dark);
     }
 
     &-2 {
-      background-image: linear-gradient(to right bottom, $lightGreen, $darkGreen), url('');
+      background: linear-gradient(to right bottom, --lightGreen, --darkGreen);
     }
 
     &-3 {
-      background-image: linear-gradient(to right bottom, $blue-light, $blue-dark), url('');
+      background: linear-gradient(to right bottom, --blue-light, --blue-dark);
     }
   }
 
@@ -73,7 +75,7 @@
     font-size: 2.8rem;
     font-weight: 300;
     text-transform: uppercase;
-    color: $white;
+    color: --white;
     text-align: right;
     position: absolute;
     top: 12rem;
@@ -86,20 +88,20 @@
 
       &-1 {
         background-image: linear-gradient(to right bottom,
-            rgba($yellow-light, .85),
-            rgba($yellow-dark, .85));
+            rgba(#ffb900, .85),
+            rgba(#ff7730, .85));
       }
 
       &-2 {
         background-image: linear-gradient(to right bottom,
-            rgba($lightGreen, .85),
-            rgba($darkGreen, .85));
+            rgba(#7ED56F, .85),
+            rgba(#28B485, .85));
       }
 
       &-3 {
         background-image: linear-gradient(to right bottom,
-            rgba($blue-light, .85),
-            rgba($blue-dark, .85));
+            rgba(#2998ff, .85),
+            rgba(#5643fa, .85));
       }
     }
   }
@@ -119,7 +121,7 @@
       padding: 1rem;
 
       &:not(:last-child) {
-        border-bottom: .1rem solid $greyUltraLight;
+        border-bottom: .1rem solid --greyUltraLight;
       }
     }
   }
@@ -136,7 +138,7 @@
 
   &_price-box {
     text-align: center;
-    color: $white;
+    color: --white;
     margin-bottom: 8rem;
   }
 
