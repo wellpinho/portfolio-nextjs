@@ -1,5 +1,9 @@
-# portfolio-nextjs
-My portfolio with React Nodejs and MongoDB
+<h1 align="center">Portfólio Wellingotn Pinho</h1>
+<p align="center">My portfolio with NextJs, Nodejs and MongoDB, Prisma.io and more...</p>
+
+<h2 align="center">
+  <img alt="#header component" title="#header component" src="assets/header.png" />
+</h2>
 
 ## Stpes:
 1. Clone this repository: ``` https://github.com/wellpinho/portfolio-nextjs.git ```
