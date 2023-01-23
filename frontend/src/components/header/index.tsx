@@ -1,6 +1,5 @@
 import { links, contact } from '@/objects'
-import { Button, Container, Spacer, Text } from '@nextui-org/react'
-import Link from 'next/link'
+import { Container, Spacer, Text } from '@nextui-org/react'
 import { FilePdf, Heart } from 'phosphor-react'
 import styles from './header.module.scss'
 
@@ -15,7 +14,7 @@ const Header = () => {
         <div className={styles.logo_box}>
           <Text style={{ padding: '2rem' }} h2>{logo}</Text>
           <Spacer x={12} />
-          <a style={{ padding: '2rem' }} href={sponsor}>
+          <a style={{ padding: '2rem' }} href={sponsor} className={styles.link}>
             <Heart className={styles.heart} size={32} weight="fill" />
             Sponsor
           </a>
