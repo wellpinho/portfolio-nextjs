@@ -9,7 +9,7 @@ const Header = () => {
   const { name } = contact
 
   return (
-    <header className={styles.header}>
+    <header className={`${styles.header}`}>
       <Container>
         <div className={styles.logo_box}>
           <Text style={{ padding: '2rem' }} h2>{logo}</Text>
@@ -25,11 +25,12 @@ const Header = () => {
         <h1 className={styles.heading_primary}>
           <span className={styles.heading_main}>{name}</span>
           <span className={styles.heading_sub}>Software Engineer</span>
+          <span className={styles.skills}>NodeJS, Typescript, NextJS, MongoDB, Docker, Jest, AWS</span>
         </h1>
 
         <a className={`${styles.btn} ${styles.btn_white} ${styles.btn_animated}`} href={cv}>
-          resume
-          <FilePdf size={28} weight="light" />
+          Resume
+          <FilePdf className={styles.icon} size={28} weight="light" />
         </a>
       </div>
     </header >
