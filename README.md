@@ -5,7 +5,7 @@
   <img alt="#header component" title="#header component" src="assets/header.png" />
 </h2>
 
-## Stpes:
+## Steps:
 1. Clone this repository: ``` https://github.com/wellpinho/portfolio-nextjs.git ```
 2. ``` cd portfolio-nextjs ```
 3. ``` cd backend && yarn && yarn prisma generate ``` after instalation run ``` yarn dev ``` backend run on port 4000
