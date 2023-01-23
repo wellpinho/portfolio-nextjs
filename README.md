@@ -1,8 +1,14 @@
 <h1 align="center">Portfólio Wellingotn Pinho</h1>
 <p align="center">My portfolio with NextJs, Nodejs and MongoDB, Prisma.io and more...</p>
 
+## header
 <h2 align="center">
   <img alt="#header component" title="#header component" src="assets/header.png" />
+</h2>
+
+## experience
+<h2 align="center">
+  <img alt="#header component" title="#header component" src="assets/expertise.png" />
 </h2>
 
 ## Steps:

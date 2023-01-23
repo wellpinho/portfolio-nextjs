@@ -6,6 +6,54 @@
   position: relative;
 }
 
+.heading_secondary {
+  color: #FFE600;
+}
+.heading_span {
+  color: #fff;
+}
+.composition {
+  margin-top: 2rem;
+  position: relative;
+  top: 1rem;
+  
+    &_photo {
+      width: 55%;
+      box-shadow: 0 1.5rem 4rem rgba(0,0,0, .4);
+      border-radius: .2rem;
+      position: absolute;
+      z-index: 10;
+      transition: all .2s;
+      outline-offset: 2rem;
+  
+      &_1 {
+        left: 0;
+        top: -1rem;
+      }
+  
+      &_2 {
+        right: 2rem;
+        top: 2rem;
+      }
+  
+      &_3 {
+        left: 20%;
+        top: 7rem;
+      }
+  
+      &:hover {
+        outline: .3rem solid #ffb900;
+        transform: scale(1.05) translate(-.5rem);
+        box-shadow: 0 2.5rem 4rem rgba(0,0,0, .5);
+        z-index: 20;
+      }
+    }
+  
+    &:hover &_photo:not(:hover) {
+      transform: scale(.95);
+    }
+}
+
 .ab_shape,
 .ab_shape {
   position: absolute;
@@ -58,7 +106,7 @@
 
   .experience_wrap,
   .experience_wrap {
-    margin-bottom: 50px;
+    margin-bottom: 10px;
   }
 }
 
@@ -176,7 +224,6 @@
 }
 
 @media (max-width: 767px) {
-
   .about_content .content_title h2,
   .about_content .content_title h2 {
     font-size: 35px;
@@ -187,7 +234,6 @@
 .about_content .content_title p {
   color: #D8D8D8;
 }
-
 
 .about_content .about_fun,
 .about_content .about_fun {

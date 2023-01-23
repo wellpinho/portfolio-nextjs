@@ -11,6 +11,26 @@
 @import "./scss/base/grid";
 @import "./scss/base/card";
 
+:root {
+  --lightGreen: #7ED56F;
+  --mediumGreen: #55C57A;
+  --darkGreen: #28B485;
+  --lightYellow: #ffb900;
+  --darkYellow: #ff7730;
+  --blueLight: #2998ff;
+  --blueDark: #5643fa;
+  --black: #000000;
+  --lightGrey: #F7F7F7;
+  --greyUltraLight: #eeeeee;
+  --grey: #777;
+  --white: #FFFFFF;
+
+  --gridWidth: 114rem;
+  --gutterVertical: 8rem;
+  --gutterHorizontal: 4rem;
+  --fontSize16: 1.6rem;
+}
+
 /*------------------------------------------------------------------
 1. General
    1.1 Theme Reset Style
@@ -73,7 +93,7 @@ html {
 body {
   font-family: "Inter", sans-serif;
   color: #D8D8D8;
-  background-color: #fff;
+  background-color: #191919 !important;
   font-size: 16px;
   font-size: 1.0666666667rem;
   overflow-x: hidden;
@@ -199,7 +219,7 @@ img {
 }
 @media (max-width: 767px) {
   .section-padding {
-    padding: 80px 0;
+    padding: 10px 0;
   }
 }
 
