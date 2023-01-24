@@ -11,6 +11,11 @@
   <img alt="#header component" title="#header component" src="assets/expertise.png" />
 </h2>
 
+## skills
+<h2 align="center">
+  <img alt="#header component" title="#header component" src="assets/skills.png" />
+</h2>
+
 ## Steps:
 1. Clone this repository: ``` https://github.com/wellpinho/portfolio-nextjs.git ```
 2. ``` cd portfolio-nextjs ```
