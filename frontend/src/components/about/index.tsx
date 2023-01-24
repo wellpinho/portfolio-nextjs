@@ -1,15 +1,15 @@
 import moment from 'moment'
 import styles from './about.module.scss'
 
-const since = {
-  startJob: 2017,
-  year: moment().format("YYYY"),
-  month: moment('2017-02').format("M"),
-};
-
-const totalWork = Number(since.year) - since.startJob;
-
 const About = () => {
+  const since = {
+    startJob: 2017,
+    year: moment().format("YYYY"),
+    month: moment('2017-02').format("M"),
+  };
+
+  const totalWork = Number(since.year) - since.startJob;
+
   return (
     <div className={`${styles.about} section-padding`}>
       <div className="container">
@@ -22,7 +22,7 @@ const About = () => {
               </div>
               <div className={styles.client}>
                 <h3>
-                  <span data-count="100">100</span>%
+                  <span>100</span>
                 </h3>
                 <p>Continuous learning</p>
               </div>
@@ -45,7 +45,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </div>
+    </div >
   )
 }
 
