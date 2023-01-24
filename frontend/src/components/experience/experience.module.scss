@@ -1,0 +1,60 @@
+.section_features {
+  padding: 10rem 0;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(#7ED56F, .8), 
+    rgba(#28B485, .8)) , 
+  url("/assets/expert.jpg");
+  background-size: cover;
+  transform: skewY(-7deg);
+  z-index: 999;
+
+  & > * {
+    transform: skewY(7deg);
+  }
+
+  h2 {
+    font-size: 4rem;
+    color: #fff;
+    padding-bottom: 4rem;
+  }
+
+  .lastChild {
+    text-align: center;
+    padding: .5rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: 100;
+    color: #444;
+  }
+}
+
+.feature_box {
+  background-color: rgba(#fff, .6);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: .3rem;
+  box-shadow: 0 1.5rem 4rem rgba(0,0,0, .15);
+  transition: .3s;
+  cursor: context-menu;
+
+  img {
+    max-width: 10rem;
+    margin-bottom: .5rem;
+    display: inline-block;
+    border: 1px solid #ddd;
+    box-shadow: 0px 0px 60px rgb(121, 118, 118);
+    border-radius: 50%;
+    background-color: #fff;
+    padding: .5rem;
+  }
+
+  p {
+    color: #444;
+  }
+
+  &:hover {
+    transform: translateY(-1.5rem) scale(1.03);
+  }
+}

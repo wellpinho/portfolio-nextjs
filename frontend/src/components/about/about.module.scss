@@ -1,9 +1,16 @@
 .about {
   background: #191919;
+  padding-top: 250px;
+  margin-top: -225px;
   height: 100vh;
   overflow: hidden;
   z-index: 1;
   position: relative;
+  transform: skewY(-7deg);
+
+  & > * {
+    transform: skewY(7deg);
+  }
 }
 
 .heading_secondary {
