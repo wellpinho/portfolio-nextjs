@@ -21,6 +21,11 @@
   <img alt="#header component" title="#header component" src="assets/work-experience.png" />
 </h2>
 
+## More recent projects
+<h2 align="center">
+  <img alt="#header component" title="#header component" src="assets/projects.png" />
+</h2>
+
 ## Steps:
 1. Clone this repository: ``` https://github.com/wellpinho/portfolio-nextjs.git ```
 2. ``` cd portfolio-nextjs ```
