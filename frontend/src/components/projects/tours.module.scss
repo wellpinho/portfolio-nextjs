@@ -1,0 +1,194 @@
+.section_tours {
+  height: 100vh;
+
+  .heading_secondary {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    background-image: -webkit-gradient(linear, left top, right top, from(#7ED56F), to(#28B485));
+    background-image: linear-gradient(to right, #7ED56F, #28B485);
+    background-clip: text;
+    color: transparent;
+    letter-spacing: .2rem;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+
+    &:hover {
+        -webkit-transform: skewY(2deg) skewX(15deg) scale(1.05);
+                transform: skewY(2deg) skewX(15deg) scale(1.05);
+        text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  .card {
+    position: relative;
+    -webkit-perspective: 150rem;
+            perspective: 150rem;
+    height: 40rem;
+    cursor: pointer;
+  }
+  
+  .card_side {
+    height: 40rem;
+    -webkit-transition: all .8s ease;
+    transition: all .8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    border-radius: .3rem;
+    overflow: hidden;
+    -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+            box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  }
+  
+  .card_side_front {
+    background-color: #FFFFFF;
+  }
+  
+  .card_side_back {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  
+  .card_side_back_1 {
+    background-image: -webkit-gradient(linear, left top, right bottom, from(#ffb900), to(#ff7730));
+    background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
+  }
+  
+  .card_side_back_2 {
+    background-image: -webkit-gradient(linear, left top, right bottom, from(#7ED56F), to(#28B485));
+    background-image: linear-gradient(to right bottom, #7ED56F, #28B485);
+  }
+  
+  .card_side_back_3 {
+    background-image: -webkit-gradient(linear, left top, right bottom, from(#2998ff), to(#5643fa));
+    background-image: linear-gradient(to right bottom, #2998ff, #5643fa);
+  }
+  
+  .card:hover .card_side_front {
+    -webkit-transform: rotateY(-180deg);
+            transform: rotateY(-180deg);
+  }
+  
+  .card:hover .card_side_back {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+  }
+  
+  .card_picture {
+    background-size: cover;
+    height: 23rem;
+    background-blend-mode: screen;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    border-top-left-radius: .3rem;
+    border-top-right-radius: .3rem;
+  }
+  
+  .card_picture_1 {
+    background-image: -webkit-gradient(linear, left top, right bottom, from(#ffb900), to(#ff7730)), url("/assets/header.png");
+    background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url("/assets/header.png");
+  }
+  
+  .card_picture_2 {
+    background-image: -webkit-gradient(linear, left top, right bottom, from(#7ED56F), to(#28B485)), url("/assets/exotic.png");
+    background-image: linear-gradient(to right bottom, #7ED56F, #28B485), url("/assets/exotic.png");
+  }
+  
+  .card_picture_3 {
+    background-image: -webkit-gradient(linear, left top, right bottom, from(#2998ff), to(#5643fa)), url("/assets/burguer3.png");
+    background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url("/assets/burguer3.png");
+  }
+  
+  .card_heading {
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: right;
+    position: absolute;
+    top: 12rem;
+    right: 2rem;
+    width: 75%;
+  }
+  
+  .card_heading_span {
+    padding: 1rem 1.5rem;
+    -webkit-box-decoration-break: clone;
+            box-decoration-break: clone;
+  }
+  
+  .card_heading_span_1 {
+    background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 185, 0, 0.85)), to(rgba(255, 119, 48, 0.85)));
+    background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85));
+  }
+  
+  .card_heading_span_2 {
+    background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(126, 213, 111, 0.85)), to(rgba(40, 180, 133, 0.85)));
+    background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.85), rgba(40, 180, 133, 0.85));
+  }
+  
+  .card_heading_span_3 {
+    background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(41, 152, 255, 0.85)), to(rgba(86, 67, 250, 0.85)));
+    background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85));
+  }
+  
+  .card_details {
+    padding: 3rem;
+  }
+  
+  .card_details ul {
+    list-style: none;
+    width: 80%;
+    margin: 0 auto;
+
+    li {
+      text-align: center;
+      font-size: 1.2rem;
+      padding: 0rem 1rem;
+    }
+  }
+  .card_details li:not(:last-child) {
+    border-bottom: 0.1rem solid #eeeeee;
+  }
+  
+  .card_cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+  }
+  
+  .card_price_box {
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 8rem;
+  }
+  
+  .card_price_only {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+  }
+  
+  .card_price_value {
+    font-size: 6rem;
+    font-weight: 100;
+  }
+
+  .margin_top_huge {
+    margin: 2rem 0;
+    text-align: center;
+  }
+
+  .btn_green {
+    background-color: #28B485;
+    color: #FFFFFF;
+  }
+}
