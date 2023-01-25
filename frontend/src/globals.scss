@@ -423,19 +423,18 @@ img {
   background-color: #202020 !important;
 }
 
-.tag_title,
+.tag_title
 .tag_title-s2 {
   margin-bottom: 60px;
   text-align: center;
 }
 @media (max-width: 767px) {
-  .tag_title,
+  .tag_title
 .tag_title-s2 {
     margin-bottom: 40px;
   }
 }
-.tag_title h2,
-.tag_title-s2 h2 {
+.tag_title {
   font-size: 48px;
   line-height: 55px;
   margin: 0;
@@ -449,21 +448,18 @@ img {
   margin-top: 10px;
 }
 @media (max-width: 1200px) {
-  .tag_title h2,
-.tag_title-s2 h2 {
+  .tag_title {
     font-size: 35px;
   }
 }
 @media (max-width: 767px) {
-  .tag_title h2,
-.tag_title-s2 h2 {
+  .tag_title {
     font-size: 32px;
     line-height: 40px;
   }
 }
 @media (max-width: 575px) {
-  .tag_title h2,
-.tag_title-s2 h2 {
+  .tag_title {
     font-size: 22px;
   }
 }
