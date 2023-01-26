@@ -26,6 +26,11 @@
   <img alt="#header component" title="#header component" src="assets/projects.png" />
 </h2>
 
+## Linkedin recommendations
+<h2 align="center">
+  <img alt="#header component" title="#header component" src="assets/recommendations.png" />
+</h2>
+
 ## Steps:
 1. Clone this repository: ``` https://github.com/wellpinho/portfolio-nextjs.git ```
 2. ``` cd portfolio-nextjs ```
