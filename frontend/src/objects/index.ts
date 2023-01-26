@@ -67,17 +67,45 @@ export const Expriences = [
 
 export const linkedinRecommendations = [
   {
+    image: '/assets/barba.jpeg',
+    name: 'George Ferreira',
+    skills: 'Software Developer',
+    linkedin: 'https://www.linkedin.com/in/georgegf/',
+    text: '',
+  },
+  {
+    image: '/assets/josh.jpeg',
+    name: 'Josseandro Farias',
+    skills: 'Full Stack Developer | Ahgora',
+    linkedin: 'https://www.linkedin.com/in/josseandrofarias/',
+    text: '',
+  },
+  {
+    image: '/assets/rafael.jpeg',
+    name: 'Raphael Yeshaya',
+    skills: 'Social Media Digital Martketing',
+    linkedin: 'https://www.linkedin.com/in/rafaelyeshaya/',
+    text: '',
+  },
+  {
+    image: '/assets/roland.jpeg',
+    name: 'Roland Schütz',
+    skills: ' Ich entwickle ambitionierte Web-Apps und erfolgreiche Webseiten. Ich bin ViennaJS Organizer, Neos CMS Core Contributor',
+    linkedin: 'https://www.linkedin.com/in/roland-schuetz/',
+    text: '',
+  },
+  {
+    image: '/assets/eros.jpeg',
+    name: 'Eros MLima',
+    skills: 'Frontend Jr (JavaScript/Python/Java), UI/UX & (Hacker Sec.) Web/Servers/AI/Games - Computer Scientist',
+    linkedin: 'https://www.linkedin.com/in/eros-mlima/',
+    text: '',
+  },
+  {
     image: '/assets/will.jpeg',
     name: 'William Martins',
     skills: 'Full Stack Developer | Full Stack Engineer | Scrum Master | Agile Coach',
     linkedin: 'https://www.linkedin.com/in/willianmartinsdeveloper/',
     text: 'Wellington é um profissional muito dedicado, está sempre pronto a ajudar os colegas e aberto para aprender novas tecnologias.',
   },
-  {
-    image: '/assets/barba.jpeg',
-    name: 'George Ferreira',
-    skills: 'Software Developer',
-    linkedin: 'https://www.linkedin.com/in/georgegf/',
-    text: '',
-  }
 ]
