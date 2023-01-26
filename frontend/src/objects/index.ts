@@ -64,3 +64,20 @@ export const Expriences = [
     link: "/",
   },
 ];
+
+export const linkedinRecommendations = [
+  {
+    image: '/assets/will.jpeg',
+    name: 'William Martins',
+    skills: 'Full Stack Developer | Full Stack Engineer | Scrum Master | Agile Coach',
+    linkedin: 'https://www.linkedin.com/in/willianmartinsdeveloper/',
+    text: 'Wellington é um profissional muito dedicado, está sempre pronto a ajudar os colegas e aberto para aprender novas tecnologias.',
+  },
+  {
+    image: '/assets/barba.jpeg',
+    name: 'George Ferreira',
+    skills: 'Software Developer',
+    linkedin: 'https://www.linkedin.com/in/georgegf/',
+    text: '',
+  }
+]

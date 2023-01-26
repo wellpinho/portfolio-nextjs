@@ -1,74 +1,57 @@
-import IMG1 from './../../assets/nat-8.jpg'
-import IMG2 from './../../assets/nat-9.jpg'
+import { links } from '@/objects'
+import { LinkedinLogo } from 'phosphor-react'
+import styles from './store.module.scss'
+import { linkedinRecommendations } from '@/objects'
 
-const store: React.FC = () => {
+const Testimonials = () => {
   return (
-    <section className="section-store">
-      <div className="bg-video">
-        <video className="bg-video_content" autoPlay muted loop>
-          {/* videos do http://coverr.co */}
-          <source src="./../../assets/video.mp4" type="video/mp4" />
-          <source src="./../../assets/video.webm" type="video/webm" />
-          Your brownser is no tsuported!
+    <section className={styles.section_stories}>
+      <div className={styles.bg_video}>
+        <video className={styles.video_content} autoPlay muted loop>
+          <source src="/assets/video.mp4" type="video/mp4" />
+          <source src="/assets/video.webm" type="video/webm" />
+          Your browser is not supported!
         </video>
       </div>
-      <div className="text-center margin-bottom-medium">
-        <h2 className="heading-secondary">
-          We make people genuinely happy
-        </h2>
-      </div>
 
-      <div className="row">
-        <div className="story">
-          <figure className="story_shape">
-            <img src={IMG1} alt="Person on a tour" />
-            <figcaption className="story_shape_caption">
-              Mary Pinho
-            </figcaption>
-          </figure>
-          <div className="story_text">
-            <h3 className="heading-tertiary margin-bottom-small">
-              I had the best week ever with my family
-            </h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum,
-              totam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum,
-              totam?
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum,
-              totam?
-              </p>
-          </div>
+      <div className={`container ${styles.store_box}`}>
+        <div style={{ textAlign: 'center', margin: '5rem 0' }}>
+          <h2 className="heading-secondary">
+            linkedin recommendations
+          </h2>
+        </div>
+        <div className="row">
+          {
+            linkedinRecommendations.map((item, index) => {
+              return (
+                <div className="col" key={index}>
+                  <div className={styles.story}>
+                    <picture className={styles.story_shape}>
+                      <img src={item.image} alt="Person on a tour" className={styles.story_img} />
+                      <figcaption className={styles.story_caption}>{item.name}</figcaption>
+                    </picture>
+
+                    <div className={styles.story_text}>
+                      <h3 style={{ marginBottom: '15px' }}>
+                        {item.skills}
+                        <a href={item.linkedin}>
+                          <LinkedinLogo size={32} weight="fill" color='gray' />
+                        </a>
+                      </h3>
+                      <p>{item.text}</p>
+                    </div>
+                  </div>
+                </div>
+              )
+            })
+          }
+        </div>
+        <div style={{ textAlign: 'center', marginTop: '1rem' }}>
+          <a href={links.linkedin} className="btn-text">Read all &rarr;</a>
         </div>
       </div>
-
-      <div className="row">
-        <div className="story">
-          <figure className="story_shape">
-            <img src={IMG2} alt="Person on a tour" />
-            <figcaption className="story_shape_caption">
-              Well Pinho
-            </figcaption>
-          </figure>
-          <div className="story_text">
-            <h3 className="heading-tertiary margin-bottom-small">
-              Wow! My life is completely different now
-            </h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum,
-              totam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum,
-              totam?
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum,
-              totam?
-              </p>
-          </div>
-        </div>
-      </div>
-
-      <div className="text-center">
-        <a href="" className="btn-text">Read all stories &rarr;</a>
-      </div>
-    </section>
+    </section >
   )
 }
 
-export default store
+export { Testimonials }

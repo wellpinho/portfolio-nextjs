@@ -157,6 +157,37 @@ img {
   }
 }
 
+// Used
+.heading-secondary {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: -webkit-gradient(linear, left top, right top, from(#7ED56F), to(#28B485));
+  background-image: linear-gradient(to right, #7ED56F, #28B485);
+  background-clip: text;
+  color: transparent;
+  letter-spacing: .2rem;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.heading-secondary:hover {
+  -webkit-transform: skewY(2deg) skewX(15deg) scale(1.05);
+          transform: skewY(2deg) skewX(15deg) scale(1.05);
+  text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.3);
+}
+
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.margin-bottom-small {
+  margin-bottom: 1.5rem;
+} // end used
+
 .hidden {
   display: none;
 }
