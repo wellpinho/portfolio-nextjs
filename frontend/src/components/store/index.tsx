@@ -24,7 +24,7 @@ const Testimonials = () => {
           {
             linkedinRecommendations.map((item, index) => {
               return (
-                <div className="col-md-4 col-xs-12" key={index}>
+                <div className="col-1-of-3" key={index}>
                   <div className={styles.story}>
                     <picture className={styles.story_shape}>
                       <img src={item.image} alt="Person on a tour" className={styles.story_img} />
@@ -32,7 +32,7 @@ const Testimonials = () => {
                     </picture>
 
                     <div className={styles.story_text}>
-                      <h3 style={{ marginBottom: '15px' }}>
+                      <h3 style={{ marginBottom: '15px', display: 'flex', alignItems: 'center' }}>
                         {item.skills}
                         <a href={item.linkedin}>
                           <LinkedinLogo className={styles.store_icon} size={32} weight="fill" />

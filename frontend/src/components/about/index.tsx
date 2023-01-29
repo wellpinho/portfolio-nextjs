@@ -38,9 +38,15 @@ const About = () => {
               then I never stopped! I love to face new challenges because
               they teach and strengthen me.</span>
             <div className={styles.composition}>
-              <img src="/assets/banner2.jpg" alt="Photo 1" className={`${styles.composition_photo} ${styles.composition_photo_1}`} />
-              <img src="/assets/banner3.jpg" alt="Photo 2" className={`${styles.composition_photo} ${styles.composition_photo_2}`} />
-              <img src="/assets/banner.jpg" alt="Photo 3" className={`${styles.composition_photo} ${styles.composition_photo_3}`} />
+              <picture>
+                <img src="/assets/banner2.jpg" alt="Photo 1" className={`${styles.composition_photo} ${styles.composition_photo_1}`} />
+              </picture>
+              <picture>
+                <img src="/assets/banner3.jpg" alt="Photo 2" className={`${styles.composition_photo} ${styles.composition_photo_2}`} />
+              </picture>
+              <picture>
+                <img src="/assets/banner.jpg" alt="Photo 3" className={`${styles.composition_photo} ${styles.composition_photo_3}`} />
+              </picture>
             </div>
           </div>
         </div>

@@ -1,16 +1,22 @@
 .section_work {
+  height: 100vh;
   background: #191919;
   position: relative;
-  top: -7.7rem;
-  padding-top: 15rem;
+  top: -9.6rem;
+  padding: 5rem 0;
   z-index: 1;
   overflow: hidden;
 
-  .logo {
+  .logo {    
     img {
-      max-width: 50%;
       border-radius: 50%;
     }
+  }
+
+  .tag_title {
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
   }
 }
 
@@ -51,6 +57,7 @@
 .section_work .work_wrap .work_item:last-child,
 .work_wrap .work_item:last-child {
   margin-bottom: .5rem;
+  padding-bottom: 1.5rem;
 }
 .section_work .work_wrap .work_item ul,
 .work_wrap .work_item ul {
@@ -112,13 +119,19 @@
     margin-bottom: 10px;
   }
 }
+
+.section_work .work_wrap .work_item ul li.date span,
+.work_wrap .work_item ul li.date {
+  display: flex;
+  flex-direction: column;
+}
+
 .section_work .work_wrap .work_item ul li.date span,
 .work_wrap .work_item ul li.date span {
-  color: #727272;
-  display: inline-block;
+  color: #ffb900;
   font-size: 15px;
-  font-weight: 400;
-  margin-left: 3px;
+  font-weight: 600;
+
 }
 
 .section_work .work_wrap .work_item ul li.logo,
@@ -178,11 +191,6 @@
   font-size: 15px;
   line-height: 1.5rem;
   margin-top: 10px;
-}
-
-.company {
-  font-weight: 600 !important;
-  color: #ffb900;
 }
 
 @media (max-width: 991px) {

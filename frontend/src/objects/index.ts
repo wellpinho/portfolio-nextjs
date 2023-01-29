@@ -1,5 +1,6 @@
 export const contact = {
   name: "Wellington Pinho",
+  profesion: 'Software Engineer',
   phone: '+5548988334573',
   email: 'wellpinho@outlook.com',
   description: 'Portfólio Wellington Pinho',
@@ -92,13 +93,6 @@ export const linkedinRecommendations = [
     name: 'Roland Schütz',
     skills: ' Ich entwickle ambitionierte Web-Apps und erfolgreiche Webseiten. Ich bin ViennaJS Organizer, Neos CMS Core Contributor',
     linkedin: 'https://www.linkedin.com/in/roland-schuetz/',
-    text: '',
-  },
-  {
-    image: '/assets/eros.jpeg',
-    name: 'Eros MLima',
-    skills: 'Frontend Jr (JavaScript/Python/Java), UI/UX & (Hacker Sec.) Web/Servers/AI/Games - Computer Scientist',
-    linkedin: 'https://www.linkedin.com/in/eros-mlima/',
     text: '',
   },
   {
