@@ -36,6 +36,11 @@
   <img alt="#header component" title="#header component" src="assets/form.png" />
 </h2>
 
+## Footer
+<h2 align="center">
+  <img alt="#header component" title="#header component" src="assets/footer.png" />
+</h2>
+
 ## Steps:
 1. Clone this repository: ``` https://github.com/wellpinho/portfolio-nextjs.git ```
 2. ``` cd portfolio-nextjs ```
