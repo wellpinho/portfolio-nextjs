@@ -31,6 +31,11 @@
   <img alt="#header component" title="#header component" src="assets/recommendations.png" />
 </h2>
 
+## Contact form
+<h2 align="center">
+  <img alt="#header component" title="#header component" src="assets/form.png" />
+</h2>
+
 ## Steps:
 1. Clone this repository: ``` https://github.com/wellpinho/portfolio-nextjs.git ```
 2. ``` cd portfolio-nextjs ```
