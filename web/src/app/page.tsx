@@ -1,3 +1,4 @@
+import { About } from './components/about'
 import { Button } from './components/buttons'
 import { Navbar } from './components/navbar'
 
@@ -42,6 +43,10 @@ export default function Home() {
           textColor='text-mediumGreen'
         />
       </div>
+
+      <main className="bg-zinc-950">
+        <About />
+      </main>
     </>
   )
 }
