@@ -1,5 +1,6 @@
 import { About } from './components/about'
 import { Button } from './components/buttons'
+import { Experience } from './components/experience'
 import { Navbar } from './components/navbar'
 
 export default function Home() {
@@ -44,8 +45,14 @@ export default function Home() {
         />
       </div>
 
-      <main className="bg-zinc-950">
-        <About />
+      <main>
+        <div className="bg-darkBlue">
+          <About />
+        </div>
+
+        <div className='h-screen py-4 bg-gradient-to-r from-gray-900 from-0% to-emerald-900 to-90%'>
+          <Experience />
+        </div>
       </main>
     </>
   )
