@@ -50,7 +50,7 @@ export default function Home() {
           <About />
         </div>
 
-        <div className='h-screen py-4 bg-gradient-to-r from-gray-900 from-0% to-emerald-900 to-90%'>
+        <div className='py-4 bg-darkGray-900'>
           <Experience />
         </div>
       </main>
