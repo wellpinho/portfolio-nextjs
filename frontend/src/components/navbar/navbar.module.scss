@@ -12,19 +12,19 @@
         right: 6rem;
         border-radius: 50%;
         z-index: 2000;
-        box-shadow: 0 1rem 3rem rgba($color-black, .1);
+        box-shadow: 0 1rem 3rem rgba(#000, .1);
         text-align: center;
         cursor: pointer;
 
-        @include respond(tab-port) {
-            top: 4rem;
-            right: 4rem;
-        }
+        // @include respond(tab-port) {
+        //     top: 4rem;
+        //     right: 4rem;
+        // }
 
-        @include respond(phone) {
-            top: 3rem;
-            right: 3rem;
-        }
+        // @include respond(phone) {
+        //     top: 3rem;
+        //     right: 3rem;
+        // }
     }
 
     .navigation_background {

@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1, h2, h3, h4, h5, h6, p, a, span {
+  @apply text-[#2D372B]
+}
+
+a {
+  @apply font-bold
+}
+
+a:hover {
+  @apply text-[#8892B0]
+}
+
+.heading_main {
+  display: block;      
+  animation: moveLeftToCenter;
+  animation-duration: 5s;
+}
+
+.heading_sub {
+  display: block;      
+  animation: moveRightToCenter;
+  animation-duration: 5s;
+}
+
+.btn_animated {
+  animation: moveInBottom 4s ease-out;
+  animation-fill-mode: backwards;
+}
+
+.animatedText {
+  animation: opacityText 5s;
+}
+
+@keyframes moveLeftToCenter {
+  0% {
+    opacity: 0;
+    transform: translateX(-500px);
+  }
+
+  50% {
+    opacity: 50%;
+    transform: translateX(75px);
+  }
+
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes moveRightToCenter {
+  0% {
+    opacity: 0;
+    transform: translateX(500px);
+  }
+
+  50% {
+    opacity: 50%;
+    transform: translateX(-5px);
+  }
+
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInBottom{
+  0%{
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  50% {
+    opacity: 50%;
+    transform: translateY(-75px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes opacityText{
+  0%{
+    opacity: 0;
+  }
+
+  75% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    background-image: url('/assets/banner3-mob.jpg');
+  }
+}
+

@@ -23,6 +23,7 @@ const Header = () => {
 
       <div className={styles.text_box}>
         <h1 className={styles.heading_primary}>
+        HI, I AM A FREELANCER
           <span className={styles.heading_main}>{name}</span>
           <span className={styles.heading_sub}>Software Engineer</span>
           <span className={styles.skills}>NodeJS, Typescript, NextJS, MongoDB, Docker, Jest, AWS</span>

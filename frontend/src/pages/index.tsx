@@ -12,6 +12,7 @@ import { contact, linkedinRecommendations, links } from '@/objects'
 import { FilePdf, Heart, LinkedinLogo, LinkSimple } from "phosphor-react";
 import moment from "moment";
 import Link from "next/link";
+import { Navbar } from "@/components/navbar";
 
 export default function Home() {
   const { name, profesion } = contact
@@ -27,7 +28,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="navigation">
+      {/* <div className="navigation">
         <input type="checkbox" className="navigation__checkbox" id="navi-toggle" />
 
         <label htmlFor="navi-toggle" className="navigation__button">
@@ -45,7 +46,8 @@ export default function Home() {
             <li className="navigation__item"><Link href="#" className="navigation__link"><span>05</span>Book now</Link></li>
           </ul>
         </nav>
-      </div>
+      </div> */}
+      <Navbar />
 
       <header className="header">
         <div className="header__logo-box" id='header'>
